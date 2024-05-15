@@ -1,0 +1,9 @@
+{
+  "name": "nx-client-customization-e2e",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "application",
+  "sourceRoot": "apps/nx-client-customization-e2e/src",
+  "implicitDependencies": ["nx-client-customization"],
+  "// targets": "to see all targets run: nx show project nx-client-customization-e2e --web",
+  "targets": {}
+}
