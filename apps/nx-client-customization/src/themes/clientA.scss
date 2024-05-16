@@ -1,16 +1,29 @@
-// custom variables
-$primary: #c29948;
+.bootstrap-v5 {
+  // custom variables
+  $primary: #c29948;
 
-// import the functions & variables
-@import "../../../../node_modules/bootstrap/scss/functions";
-@import "../../../../node_modules/bootstrap/scss/_variables";
+  // import the functions & variables
+  @import '../../../../node_modules/bootstrap/scss/functions';
+  @import '../../../../node_modules/bootstrap/scss/_variables';
 
-$client-a-theme-colors: (
-  "altlight": #f2ebfa,
-  "altdark": #522192
-);
+  $client-a-theme-colors: (
+    'altlight': #f2ebfa,
+    'altdark': #522192,
+  );
 
-$theme-colors: map-merge($custom-theme-colors, $theme-colors);
+  $theme-colors: map-merge($client-a-theme-colors, $theme-colors);
 
-// import bootstrap
-@import '../../../../node_modules/bootstrap/scss/bootstrap';
+  // import bootstrap
+  @import '../../../../node_modules/bootstrap/scss/bootstrap';
+
+  .btn-primary {
+    @include button-variant(
+      $primary,
+      darken($primary, 7.5%),
+      darken($primary, 10%),
+      lighten($primary, 5%),
+      lighten($primary, 10%),
+      darken($primary, 30%)
+    );
+  }
+}

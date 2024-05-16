@@ -39,6 +39,15 @@
           ],
           "outputHashing": "all"
         },
+        "clientA": {
+          "styles": ["apps/nx-client-customization/src/themes/clientA.scss"],
+          "fileReplacements": [
+
+          ]
+        },
+        "clientB": {
+          "styles": ["apps/nx-client-customization/src/themes/clientB.scss"]
+        },
         "development": {
           "optimization": false,
           "extractLicenses": false,
@@ -55,6 +64,12 @@
         },
         "development": {
           "buildTarget": "nx-client-customization:build:development"
+        },
+        "development-clientA": {
+          "buildTarget": "nx-client-customization:build:development,clientA"
+        },
+        "development-clientB": {
+          "buildTarget": "nx-client-customization:build:development,clientB"
         }
       },
       "defaultConfiguration": "development"
