@@ -1,12 +1,13 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { ClientConfigurationService } from './client-configuration.service';
 
 @Component({
   selector: 'app-nx-welcome',
   standalone: true,
   imports: [CommonModule],
   template: `<div class="container">
-    <h1>Hello World</h1>
+    <h1>Hello {{ config.clientName }} </h1>
     <div>
       <button type="button" class="btn btn-primary">Primary</button>
       <button type="button" class="btn btn-secondary">Secondary</button>
@@ -22,4 +23,6 @@ import { CommonModule } from '@angular/common';
   </div>`,
   styles: [],
 })
-export class NxWelcomeComponent {}
+export class NxWelcomeComponent {
+  config = inject(ClientConfigurationService).config;
+}
