@@ -1,0 +1,6 @@
+$icon-font-path: '../../assets/fonts/bootstrap';
+$bootstrap-sass-asset-helper: true;
+
+.bootstrap-v3 {
+  @import '../../../../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap';
+}

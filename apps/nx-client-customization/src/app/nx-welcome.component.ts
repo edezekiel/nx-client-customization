@@ -7,7 +7,7 @@ import { ClientConfigurationService } from './client-configuration.service';
   standalone: true,
   imports: [CommonModule],
   template: `<div class="container">
-    <h1>Hello {{ config.clientName }} </h1>
+    <h1>Hello {{ config.clientName }} - Bootstrap v5 </h1>
     <div>
       <button type="button" class="btn btn-primary">Primary</button>
       <button type="button" class="btn btn-secondary">Secondary</button>

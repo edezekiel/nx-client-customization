@@ -40,18 +40,24 @@
           "outputHashing": "all"
         },
         "clientA": {
-          "styles": ["apps/nx-client-customization/src/themes/clientA.scss"],
+          "styles": [
+            "apps/nx-client-customization/src/themes/clientA.scss",
+            "apps/nx-client-customization/src/themes/shared/bootstrap-v3.scss"
+          ],
           "fileReplacements": [
-            { 
+            {
               "replace": "apps/nx-client-customization/src/configurations/client.configuration.ts",
               "with": "apps/nx-client-customization/src/configurations/clientA.configuration.ts"
             }
           ]
         },
         "clientB": {
-          "styles": ["apps/nx-client-customization/src/themes/clientB.scss"],
+          "styles": [
+            "apps/nx-client-customization/src/themes/clientB.scss",
+            "apps/nx-client-customization/src/themes/shared/bootstrap-v3.scss"
+          ],
           "fileReplacements": [
-            { 
+            {
               "replace": "apps/nx-client-customization/src/configurations/client.configuration.ts",
               "with": "apps/nx-client-customization/src/configurations/clientB.configuration.ts"
             }

@@ -6,7 +6,7 @@ import { CommonModule } from '@angular/common';
   standalone: true,
   imports: [CommonModule],
   template: `<div class="container">
-    <h1>Hello World</h1>
+    <h1>Hello World - Bootstrap v3 </h1>
     <div>
       <button type="button" class="btn btn-primary">Primary</button>
       <button type="button" class="btn btn-secondary">Secondary</button>
