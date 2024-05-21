@@ -1,11 +1,9 @@
+// custom variables
+$primary: #c29948;
+
+@import './shared/global.scss';
+
 .bootstrap-v5 {
-  // custom variables
-  $primary: #c29948;
-
-  // import the functions & variables
-  @import '../../../../node_modules/bootstrap/scss/functions';
-  @import '../../../../node_modules/bootstrap/scss/_variables';
-
   $client-a-theme-colors: (
     'altlight': #f2ebfa,
     'altdark': #522192,
@@ -14,7 +12,7 @@
   $theme-colors: map-merge($client-a-theme-colors, $theme-colors);
 
   // import bootstrap
-  @import '../../../../node_modules/bootstrap/scss/bootstrap';
+  @import './shared/bootstrap';
 
   .btn-primary {
     @include button-variant(

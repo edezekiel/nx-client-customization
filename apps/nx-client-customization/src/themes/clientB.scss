@@ -1,3 +1,5 @@
+@import './shared/global.scss';
+
 .bootstrap-v5 {
   // custom variables
   $primary: #6dc248;
@@ -14,7 +16,7 @@
   $theme-colors: map-merge($client-b-theme-colors, $theme-colors);
 
   // import bootstrap
-  @import '../../../../node_modules/bootstrap/scss/bootstrap';
+  @import './shared/bootstrap';
 
   .btn-primary {
     @include button-variant(
